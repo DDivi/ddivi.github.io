@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+        <style>
+                body{
+                    margin-left:10em;
+                    display:grid;
+                    grid-template: "h t h1" 5em
+                                   "n t h1" 9em
+                                   "s t h1" 2em
+                                   "c t h1" 10em
+                                   "s1 t h1" 10em
+                                   "s1 t m" 30em
+                                   "p f f" 3em/ 15em 1em 57em;
+                    height:100vh;
+                    background:#eeeeee;
+                    color:#222222;
+                }
+                header{
+                    grid-area:h;
+                    background:#222222;
+                    color:#ffffff;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 50px;
+                }
+                article{
+                    grid-area: m;
+                    background:#ffffff;
+                    word-wrap:break-word;  
+                    word-break:break-all;  
+                    overflow: hidden;
+                }
+                aside{
+                    grid-area: a;
+                    background:#ffffff;
+                }
+                contact{
+                    grid-area:c;
+                    background:#ffffff;
+                    text-align: center;
+                }
+                navigation{
+                    grid-area:n;
+                    background:#ffffff;
+                    text-align: center;
+                    color:#222222;
+                    line-height: 25px;
+                }
+                footer{
+                    grid-area: f;
+                    background:#eeeeee;
+                    text-align:center;
+                }
+                intro{
+                    grid-area: h1;
+                    background:#ffffff;
+                    padding-left:2.5em;
+                    padding-right:2.5em;
+                    padding-top:1.5em;
+                    word-wrap:break-word;  
+                    word-break:break-all;  
+                    overflow: hidden;
+                    font-size: 0.9em;
+                    font-family:"Century";
+                }
+                .selfinfo{
+                    border-style:solid;
+                    border-width: 2px;
+                    border-color:#aaaaaa;
+                }
+                </style>
+</html>
