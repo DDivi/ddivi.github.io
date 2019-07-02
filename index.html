@@ -3,32 +3,49 @@
         body{
             margin:3em;
             display:grid;
-            grid-template: "h h" 3em
-                           "a m" 50em
-                           "f f" 3em/ 15em 1fr;
+            grid-template: "h t m" 5em
+                           "n t m" 10em
+                           "s t m" 2em
+                           "c t m" 15em
+                           "f f f" 3em/ 15em 1em 1fr;
             height:100vh;
+            background:#eeeeee;
+            color:#222222;
         }
         header{
-            grid-area: h;
-            background:#fde576;
+            grid-area:h;
+            background:#222222;
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
         }
         article{
             grid-area: m;
-            background:#f9f1cd;
+            background:#ffffff;
         }
         aside{
             grid-area: a;
-            background:#fcf9ec;
+            background:#ffffff;
+        }
+        contact{
+            grid-area:c;
+            background:#ffffff;
+            text-align: center;
+        }
+        navigation{
+            grid-area:n;
+            background:#ffffff;
         }
         footer{
             grid-area: f;
-            background:#fde576;
+            background:#eeeeee;
             text-align:center;
         }
         .self_info{
             text-indent:7px;
             line-height: 1.1em;
-            color:grey;
+            color:#555555;
         }
         </style>
 <html>
@@ -42,41 +59,30 @@
         <title>Homepage of Xuxin Liu</title>
     </head>
     <body>
-        <header></header>
-        <aside>
-            <div align="center">
-            <img src="img/me.jpg">
-            </div>
-            <div class="self_info">
-            <p style="font-size: 1.2em; font-weight: bold">
-                Self Information
-            </p>
+        <header>
             <p>
-                Name: Xuxin Liu
+            Homepage of Xuxin Liu
             </p>
-            <p>
-                School: Tsinghua University
-            </p>
-            <p>
-                Major: Software Engineering
-            </p>
-            <br>
-            <p class="contact">
-                Contact Me:
-            </p>
-            <p>
-                <a href="mailto:liuxuxin@outlook.com" style="color:grey">Email</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.github.com/THUMarkLau" style="color:grey">GitHub</a>
-            </p>
-            <p>
-                <a href="https://www.zhihu.com/people/ma-ke-liu/activities" style="color:grey">Zhihu</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://weibo.com/MarkLiuZBer/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" style="color:grey">
-                Weibo</a>
-            </p>
-            </div>
-        </aside>
+        </header>
+        <navigation></navigation>
+        <contact>
+                <p class="contact">
+                    <span style="line-height: 50px; font-weight: bold;">
+                        Xuxin Liu
+                    </span>
+                    </p>
+                    <p>
+                        <a href="mailto:liuxuxin@outlook.com" style="color:#222222;">Email</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.github.com/THUMarkLau" style="color:#222222;">GitHub</a>
+                    </p>
+                    <p>
+                        <a href="https://www.zhihu.com/people/ma-ke-liu/activities" style="color:#222222;">Zhihu</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://weibo.com/MarkLiuZBer/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" style="color:#222222;">
+                        Weibo</a>
+                    </p>
+        </contact>
         <article>
         </article>
         <footer>
