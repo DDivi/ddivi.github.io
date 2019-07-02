@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <style>
         body{
-            margin:3em;
+            margin-left:10em;
             display:grid;
-            grid-template: "h t m" 5em
-                           "n t m" 10em
-                           "s t m" 2em
-                           "c t m" 15em
-                           "f f f" 3em/ 15em 1em 1fr;
+            grid-template: "h t h1" 5em
+                           "n t h1" 9em
+                           "s t h1" 2em
+                           "c t h1" 10em
+                           "s1 t h1" 8em
+                           "s1 t m" 30em
+                           "p f f" 3em/ 15em 1em 57em;
             height:100vh;
             background:#eeeeee;
             color:#222222;
@@ -23,6 +25,15 @@
         article{
             grid-area: m;
             background:#ffffff;
+            word-wrap:break-word;  
+            word-break:break-all;  
+            overflow: hidden;
+            padding-left:2.5em;
+            padding-right:2.5em;
+            padding-top:0.5em;
+            font-size:0.9em;
+            font-family:"Century";
+
         }
         aside{
             grid-area: a;
@@ -36,24 +47,44 @@
         navigation{
             grid-area:n;
             background:#ffffff;
+            text-align: center;
+            color:#222222;
+            line-height: 25px;
+            border-style:solid;
+            border-width:3px;
+            border-color:#222222;
         }
         footer{
             grid-area: f;
             background:#eeeeee;
             text-align:center;
         }
-        .self_info{
-            text-indent:7px;
-            line-height: 1.1em;
-            color:#555555;
+        intro{
+            grid-area: h1;
+            background:#ffffff;
+            padding-left:2.5em;
+            padding-right:2.5em;
+            padding-top:1.5em;
+            word-wrap:break-word;  
+            word-break:break-all;  
+            overflow: hidden;
+            font-size: 0.9em;
+            font-family:"Century";
+        }
+        .info{
+            border-style:solid;
+            border-width: 2px;
+            border-color:#aaaaaa;
+        }
+        .blogs{
+            border-style:solid;
+            border-width:2px;
+            border-color:#aaaaaa;
+            text-indent:1.5em;
+            line-height: 0.9em;
         }
         </style>
 <html>
-    <style>
-        p.test{
-            font-family:"楷体"
-        }
-    </style>
     <head>
         <meta charset="UTF-8">
         <title>Homepage of Xuxin Liu</title>
@@ -64,7 +95,17 @@
             Homepage of Xuxin Liu
             </p>
         </header>
-        <navigation></navigation>
+        <navigation>
+            <p>
+                <a href="./blogs.html" style="color:#222222; text-decoration: none; font-weight: bold">Blogs</a>
+            </p>
+            <p>
+                <a href="./dynamics.html" style="color:#222222; text-decoration: none; font-weight: bold">Dynamics</a>
+            </p>
+            <p>
+                    <a href="./others.html" style="color:#222222; text-decoration: none; font-weight: bold">Others</a>
+            </p>
+        </navigation>
         <contact>
                 <p class="contact">
                     <span style="line-height: 50px; font-weight: bold;">
@@ -83,7 +124,30 @@
                         Weibo</a>
                     </p>
         </contact>
+        <intro>
+            <div class="info" align=center>
+                <p style="font-weight: bold; font-size: 1.8em">About Me</p>
+                <img src="img/me.jpg">
+                <p style="padding-left:3em; padding-right:3em; font-size: 1.1em; text-align: left">
+                    I am an undergraduate student in the School of Software at Tsinghua University starting from Autu-mn 2017. 
+                    My research advisor is <a style="color:#222222" href="http://www.gaoyue.org/cn_tsinghua/index">Prof. Gao.</a>
+                    I have done some research about GAN. Now my research interest is about 3D computer vision.
+                </p>
+                <p style="padding-left:3em; padding-right:3em; font-size: 1.1em; text-align: left">
+                    Besides research, I am also interested in social science. Thanks to the education of Tsinghua Univer-sity, I have learned 
+                    some basic knowledge about international relationship, art, etc.
+                </p>
+            </div>
+        </intro>
         <article>
+            <div class="blogs">
+                <p align=center style="font-size: 1.8em; font-weight: bold">Recent Blogs</p>
+                <ul>
+                    <li>
+                        <a href="blogs/developing.html" style="color:#222222; text-decoration: none; font-size: 1.3em">Website Developing Journal</a>
+                    </li> 
+                </ul>
+            </div>
         </article>
         <footer>
             <p style="font-size:0.7em">
