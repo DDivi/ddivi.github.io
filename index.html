@@ -1,15 +1,89 @@
 <!DOCTYPE html>
+<style>
+        body{
+            margin:3em;
+            display:grid;
+            grid-template: "h h" 3em
+                           "a m" 50em
+                           "f f" 3em/ 15em 1fr;
+            height:100vh;
+        }
+        header{
+            grid-area: h;
+            background:#fde576;
+        }
+        article{
+            grid-area: m;
+            background:#f9f1cd;
+        }
+        aside{
+            grid-area: a;
+            background:#fcf9ec;
+        }
+        footer{
+            grid-area: f;
+            background:#fde576;
+            text-align:center;
+        }
+        .self_info{
+            text-indent:7px;
+            line-height: 1.1em;
+            color:grey;
+        }
+        </style>
 <html>
+    <style>
+        p.test{
+            font-family:"楷体"
+        }
+    </style>
     <head>
         <meta charset="UTF-8">
         <title>Homepage of Xuxin Liu</title>
     </head>
     <body>
-        <h1>
-            This is a h1 title.
-        </h1>
-        <p>
-            This is a praragraph.
-        </p>
+        <header></header>
+        <aside>
+            <div align="center">
+            <img src="img/me.jpg">
+            </div>
+            <div class="self_info">
+            <p style="font-size: 1.2em; font-weight: bold">
+                Self Information
+            </p>
+            <p>
+                Name: Xuxin Liu
+            </p>
+            <p>
+                School: Tsinghua University
+            </p>
+            <p>
+                Major: Software Engineering
+            </p>
+            <br>
+            <p class="contact">
+                Contact Me:
+            </p>
+            <p>
+                <a href="mailto:liuxuxin@outlook.com" style="color:grey">Email</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.github.com/THUMarkLau" style="color:grey">GitHub</a>
+            </p>
+            <p>
+                <a href="https://www.zhihu.com/people/ma-ke-liu/activities" style="color:grey">Zhihu</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://weibo.com/MarkLiuZBer/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" style="color:grey">
+                Weibo</a>
+            </p>
+            </div>
+        </aside>
+        <article>
+        </article>
+        <footer>
+            <p style="font-size:0.7em">
+                    © 2019   Xuxin Liu
+            </p>
+        </footer>
     </body>
+    
 </html>
