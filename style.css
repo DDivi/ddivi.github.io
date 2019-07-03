@@ -45,7 +45,7 @@
             padding-right:2.5em;
             padding-top:0.5em;
             font-size:0.9em;
-            font-family:"Century";
+            font-family:"Century","Times New Roman";
 
         }
         aside{
@@ -82,7 +82,7 @@
             word-break:break-all;  
             overflow: hidden;
             font-size: 0.9em;
-            font-family:"Century";
+            font-family:"Century","Times New Roman";
         }
         .info{
             border-style:solid;
